@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="FinalProjectStyle.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="Index.html"><img src="HKLogo.webp" alt="Logo"></a>
+        </div>
+        <div id="menu">
+            <a href="Index.html">Homepage</a>
+            <a href="AllListings.html">Listings</a>
+            <a href="Contact.html">Contact</a>
+            <a href="SiteMap.html">References</a>
+            <a href="file:///C:/Users/Ido%20Isaac/Week1/Lab%202%20Assignment/Index.html">Student Homepage</a>
+        </div>
+    </header>
+    <main>
+        <div id="pageTitle">
+            <h1>Contact Form</h1>
+        </div>
+        <div id="form">
+            <form>
+                <p>I'm Looking To:</p>
+                <label for="rent">Rent</label>
+                <input type="radio" name="transactionType" id="rent" value="rent" required>
+                <label for="buy">Buy</label>
+                <input type="radio" name="transactionType" id="buy" value="buy">
+                <label for="sell">Sell</label>
+                <input type="radio" name="transactionType" id="sell" value="sell">
+                <h3>Personal Information</h3>
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName" size="55" required><br>
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" size="55" required><br>
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" size="55" maxlength="10" placeholder="416-464-8225" required><br>
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id="email" size="55" placeholder="pherman@harveykalles.com" required>
+                <h3>Property Information</h3>
+                <label for="houseType">Type of Property</label>
+                <select name="houseType" id="houseType" size="1">
+                    <option selected disabled>Choose From List</option>
+                    <option value="house">House</option>
+                    <option value="condo">Condominium</option>
+                    <option value="apt">Apartment</option>
+                    <option value="studio">Studio</option>
+                </select><br>
+                <label for="bedroomNumber">Number of Bedrooms</label>
+                <input type="number" name="bedroomNumber" id="bedroomNumber" min="1" max="10" placeholder="0"><br>
+                <label for="bathroomNumber">Number of Bathrooms</label>
+                <input type="number" name="bathroomNumber" id="bathroomNumber" min="1" max="10" placeholder="0"><br>
+                <label for="price">Maximum Price Range</label>
+                <input type="number" name="price" id="price" min="0" max="100000000" placeholder="234,000,999">
+                <h3>Additional Comments</h3>
+                <textarea name="comments" id="comments" rows="5" cols="70"></textarea><br>
+                <input type="submit" name="submit" id="submit" value="Send">
+                <input type="reset" name="reset" id="reset" value="Reset"><br>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Harvey Kalles Real Estate Ltd., Brokerage</p>
+        <!--Ido Isaac - 301374969 --> 
+    </footer>
+</body>
+</html>
